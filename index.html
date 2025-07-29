@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Ini Produk Loh</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<div id="keranjang" class="keranjang">
+  <h3>🛒 Keranjang Belanja</h3>
+  <ul id="daftar-keranjang"></ul>
+  <p id="total-belanja"><strong>Total:</strong> Rp 0</p>
+  <button onclick="checkout()">Checkout via WhatsApp</button>
+</div>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <img src="logo.png" alt="Logo" style="height: 40px;">
+      <span>Ini Produk Loh</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ISI HALAMAN -->
+  <main>
+
+    <!-- BERANDA -->
+   <section id="tentang" class="section">
+  <h2>Tentang Kami</h2>
+  <p><strong>Ini Produk Loh</strong> adalah toko online yang menyediakan berbagai produk perlengkapan rumah tangga seperti lemari, kulkas, meja makan, kitchen set, dan lain-lain.</p>
+  <p>Berdiri sejak tahun 2025, toko ini hadir dengan misi memberikan solusi kebutuhan rumah tangga yang berkualitas tinggi namun tetap ramah di kantong.</p>
+  <p>Kami berkomitmen untuk menghadirkan layanan yang cepat, aman, dan terpercaya. Didukung oleh tim yang profesional, kami terus meningkatkan pelayanan dan memperluas jangkauan pengiriman ke seluruh Indonesia.</p>
+  <p>Visi kami adalah menjadi toko online perlengkapan rumah tangga nomor satu pilihan masyarakat Indonesia.</p>
+</section>
+
+    <!-- PRODUK -->
+    <section id="produk" class="section">
+  <h2>Produk Kami</h2>
+  <div class="produk-container">
+
+<div class="produk-card">
+  <img src="lemari.jpg" alt="Lemari">
+  <h3>Lemari Kayu Minimalis</h3>
+  <p>Rp 5.000.000</p>
+  <label>Jumlah:
+    <input type="number" min="1" value="1" class="qty" />
+  </label>
+  <button onclick="tambahKeKeranjang(this)">Tambah ke Keranjang</button>
+</div>
+
+    <div class="produk-card">
+      <img src="kulkas.jpg" alt="Kulkas">
+      <h3>Kulkas Dua Pintu</h3>
+      <p>Rp 4.000.000</p>
+	  <label>Jumlah:
+    <input type="number" min="1" value="1" class="qty" />
+  </label>
+  <button onclick="tambahKeKeranjang(this)">Tambah ke Keranjang</button>
+</div>
+
+    <div class="produk-card">
+      <img src="meja-makan.jpg" alt="Meja Makan">
+      <h3>Meja Makan Full Set</h3>
+      <p>Rp 6.000.000</p>
+<label>Jumlah:
+    <input type="number" min="1" value="1" class="qty" />
+  </label>
+  <button onclick="tambahKeKeranjang(this)">Tambah ke Keranjang</button>
+</div>
+
+    <div class="produk-card">
+      <img src="kitchen-set.jpg" alt="Kitchen Set">
+      <h3>Kitchen Set Lengkap</h3>
+      <p>Rp 20.000.000</p>
+<label>Jumlah:
+    <input type="number" min="1" value="1" class="qty" />
+  </label>
+  <button onclick="tambahKeKeranjang(this)">Tambah ke Keranjang</button>
+</div>
+
+    <div class="produk-card">
+      <img src="mini-bar.jpg" alt="Mini Bar">
+      <h3>Mini Bar Dapur</h3>
+      <p>Rp 3.500.000</p>
+<label>Jumlah:
+    <input type="number" min="1" value="1" class="qty" />
+  </label>
+  <button onclick="tambahKeKeranjang(this)">Tambah ke Keranjang</button>
+</div>
+
+    <div class="produk-card">
+      <img src="kursi-berjemur.jpg" alt="Kursi Berjemur">
+      <h3>Kursi Berjemur</h3>
+      <p>Rp 2.000.000</p>
+<label>Jumlah:
+    <input type="number" min="1" value="1" class="qty" />
+  </label>
+  <button onclick="tambahKeKeranjang(this)">Tambah ke Keranjang</button>
+</div>
+
+    <div class="produk-card">
+      <img src="lemari-piring.jpg" alt="Lemari Piring">
+      <h3>Lemari Piring Kaca</h3>
+      <p>Rp 1.500.000</p>
+<label>Jumlah:
+    <input type="number" min="1" value="1" class="qty" />
+  </label>
+  <button onclick="tambahKeKeranjang(this)">Tambah ke Keranjang</button>
+</div>
+
+    <div class="produk-card">
+      <img src="pintu-jati.jpg" alt="Pintu Jati">
+      <h3>Pintu Kayu Jati Ukir</h3>
+      <p>Rp 4.500.000</p>
+<label>Jumlah:
+    <input type="number" min="1" value="1" class="qty" />
+  </label>
+  <button onclick="tambahKeKeranjang(this)">Tambah ke Keranjang</button>
+</div>
+
+    <div class="produk-card">
+      <img src="pagar-besi.jpg" alt="Pagar Besi">
+      <h3>Pagar Besi Minimalis</h3>
+      <p>Rp 7.000.000</p>
+<label>Jumlah:
+    <input type="number" min="1" value="1" class="qty" />
+  </label>
+  <button onclick="tambahKeKeranjang(this)">Tambah ke Keranjang</button>
+</div>
+
+    <div class="produk-card">
+      <img src="kanopi.jpg" alt="Kanopi">
+      <h3>Kanopi Baja Ringan</h3>
+      <p>Rp 6.000.000</p>
+<label>Jumlah:
+    <input type="number" min="1" value="1" class="qty" />
+  </label>
+  <button onclick="tambahKeKeranjang(this)">Tambah ke Keranjang</button>
+</div>
+
+    <div class="produk-card">
+      <img src="lampu-taman.jpg" alt="Lampu Taman">
+      <h3>Lampu Taman Solar</h3>
+      <p>Rp 450.000</p>
+<label>Jumlah:
+    <input type="number" min="1" value="1" class="qty" />
+  </label>
+  <button onclick="tambahKeKeranjang(this)">Tambah ke Keranjang</button>
+</div>
+
+    <div class="produk-card">
+      <img src="lampu-teras.jpg" alt="Lampu Teras">
+      <h3>Lampu Teras Dinding</h3>
+      <p>Rp 350.000</p>
+<label>Jumlah:
+    <input type="number" min="1" value="1" class="qty" />
+  </label>
+  <button onclick="tambahKeKeranjang(this)">Tambah ke Keranjang</button>
+</div>
+
+    <div class="produk-card">
+      <img src="pemotong-rumput.jpg" alt="Pemotong Rumput">
+      <h3>Pemotong Rumput Listrik</h3>
+      <p>Rp 1.200.000</p>
+<label>Jumlah:
+    <input type="number" min="1" value="1" class="qty" />
+  </label>
+  <button onclick="tambahKeKeranjang(this)">Tambah ke Keranjang</button>
+</div>
+
+    <div class="produk-card">
+      <img src="rak-sepatu.jpg" alt="Rak Sepatu">
+      <h3>Rak Sepatu Minimalis</h3>
+      <p>Rp 600.000</p>
+<label>Jumlah:
+    <input type="number" min="1" value="1" class="qty" />
+  </label>
+  <button onclick="tambahKeKeranjang(this)">Tambah ke Keranjang</button>
+</div>
+
+    <div class="produk-card">
+      <img src="vakum.jpg" alt="Vakum">
+      <h3>Vakum Cleaner Portable</h3>
+      <p>Rp 950.000</p>
+<label>Jumlah:
+    <input type="number" min="1" value="1" class="qty" />
+  </label>
+  <button onclick="tambahKeKeranjang(this)">Tambah ke Keranjang</button>
+</div>
+
+  </div>
+</section>
+
+
+    <!-- TENTANG -->
+    <section id="tentang" class="section">
+  <h2>Tentang Kami</h2>
+  <p><strong>Ini Produk Loh</strong> adalah toko online yang menyediakan berbagai produk perlengkapan rumah tangga seperti lemari, kulkas, meja makan, kitchen set, dan lainnya.</p>
+  <p>Toko ini resmi berdiri sejak tahun <strong>2025</strong> dan berbasis di <strong>Kabupaten Balangan, Kalimantan Selatan</strong>.</p>
+  <p>Lokasi toko kami berada di <strong>sebelah rumah Martino Albar, Jalan Putri Jujung Buih, Perumahan Balai Pangeran Resident, Paringin Selatan, Indonesia</strong>.</p>
+  <p>Dengan semangat lokal dan pelayanan digital, kami berkomitmen untuk memberikan solusi belanja rumah tangga yang mudah, cepat, dan terpercaya untuk seluruh masyarakat Indonesia.</p>
+  <p>Visi kami adalah menjadi toko online perlengkapan rumah tangga nomor satu pilihan keluarga Indonesia.</p>
+</section>
+
+
+    <!-- KONTAK -->
+    <section id="kontak" class="section">
+      <h2>Hubungi Kami</h2>
+      <p>Email: support@iniprodukloh.com</p>
+      <p>WhatsApp: 0877-1562-7881</p>
+      <p>Alamat: Jl. Putri Junjung Buih. Perumahan Balai Pangeran No. 1, Balangan</p>
+    </section>
+
+  </main>
+<script>
+  // Inisialisasi keranjang dari localStorage saat halaman dibuka
+  window.onload = function () {
+    const simpan = JSON.parse(localStorage.getItem('keranjang')) || [];
+    simpan.forEach(item => {
+      tampilkanItem(item.nama, item.harga, item.jumlah);
+    });
+    hitungTotal();
+  };
+
+  function tambahKeKeranjang(button) {
+    const card = button.parentElement;
+    const namaProduk = card.querySelector('h3').innerText;
+    const hargaText = card.querySelector('p').innerText.replace(/[^\d]/g, '');
+    const harga = parseInt(hargaText);
+    const jumlah = parseInt(card.querySelector('.qty').value);
+
+    if (!jumlah || jumlah < 1) {
+      return alert('Jumlah harus lebih dari 0');
+    }
+
+    const item = { nama: namaProduk, harga, jumlah };
+    simpanItem(item);
+    tampilkanItem(namaProduk, harga, jumlah);
+    hitungTotal();
+  }
+
+  function tampilkanItem(nama, harga, jumlah) {
+    const daftar = document.getElementById('daftar-keranjang');
+    const item = document.createElement('li');
+    item.textContent = ${nama} - Rp ${harga.toLocaleString()} x ${jumlah};
+    daftar.appendChild(item);
+  }
+
+  function simpanItem(itemBaru) {
+    let keranjang = JSON.parse(localStorage.getItem('keranjang')) || [];
+    keranjang.push(itemBaru);
+    localStorage.setItem('keranjang', JSON.stringify(keranjang));
+  }
+
+  function hitungTotal() {
+    let keranjang = JSON.parse(localStorage.getItem('keranjang')) || [];
+    let total = keranjang.reduce((sum, item) => sum + item.harga * item.jumlah, 0);
+    document.getElementById('total-belanja').innerHTML = <strong>Total:</strong> Rp ${total.toLocaleString()};
+  }
+
+  function checkout() {
+    let keranjang = JSON.parse(localStorage.getItem('keranjang')) || [];
+    if (keranjang.length === 0) {
+      alert('Keranjang masih kosong!');
+      return;
+    }
+
+    let pesan = 'Halo, saya ingin memesan:%0A';
+    keranjang.forEach(item => {
+      pesan += - ${item.nama} x${item.jumlah} (Rp ${item.harga.toLocaleString()})%0A;
+    });
+
+    let total = keranjang.reduce((sum, item) => sum + item.harga * item.jumlah, 0);
+    pesan += %0ATotal: Rp ${total.toLocaleString()};
+
+    // Ganti nomor di bawah dengan nomor WhatsApp toko kamu
+    let nomorWA = '6281234567890';
+    let linkWA = https://wa.me/${nomorWA}?text=${pesan};
+    window.open(linkWA, '_blank');
+  }
+</script>
+
+</body>
+</html>
